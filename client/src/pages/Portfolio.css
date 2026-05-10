@@ -1,0 +1,15 @@
+.filter-bar { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 36px; }
+.filter-btn { background: var(--gray-100); border: 1.5px solid var(--gray-200); color: var(--gray-700); padding: 8px 20px; border-radius: 20px; font-size: 14px; font-weight: 500; transition: all 0.2s; }
+.filter-btn:hover { border-color: var(--blue); color: var(--blue); }
+.filter-btn.active { background: var(--blue); border-color: var(--blue); color: white; }
+.portfolio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.project-card { padding: 0; overflow: hidden; }
+.project-thumb { height: 160px; display: flex; align-items: center; justify-content: center; position: relative; }
+.project-initial { font-family: var(--font-heading); font-size: 56px; font-weight: 800; color: rgba(255,255,255,0.25); }
+.project-category-tag { position: absolute; top: 12px; right: 12px; background: rgba(0,0,0,0.3); color: white; font-size: 11px; padding: 3px 10px; border-radius: 20px; backdrop-filter: blur(4px); }
+.project-body { padding: 24px; }
+.project-body h3 { font-family: var(--font-heading); font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+.project-body p { font-size: 14px; color: var(--gray-500); line-height: 1.7; margin-bottom: 14px; }
+.project-tags { display: flex; gap: 8px; flex-wrap: wrap; }
+@media (max-width: 900px) { .portfolio-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .portfolio-grid { grid-template-columns: 1fr; } }

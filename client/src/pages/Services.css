@@ -1,0 +1,15 @@
+.svc-card { display: flex; flex-direction: column; gap: 14px; }
+.svc-top { display: flex; align-items: center; gap: 14px; }
+.svc-icon { font-size: 28px; }
+.svc-top h3 { font-family: var(--font-heading); font-size: 19px; font-weight: 700; }
+.svc-desc { font-size: 14.5px; color: var(--gray-500); line-height: 1.7; }
+.svc-features { display: flex; flex-direction: column; gap: 8px; margin-top: 4px; }
+.svc-features li { display: flex; align-items: center; gap: 8px; font-size: 13.5px; color: var(--gray-700); }
+.check { color: var(--green); font-weight: 700; }
+
+.process-steps { display: flex; flex-direction: column; gap: 0; position: relative; max-width: 680px; }
+.process-step { display: flex; align-items: flex-start; gap: 24px; padding: 28px 0; position: relative; }
+.process-step:not(:last-child) { border-bottom: 1px solid var(--gray-200); }
+.step-num { font-family: var(--font-heading); font-size: 28px; font-weight: 800; color: var(--blue); min-width: 52px; }
+.process-step h4 { font-family: var(--font-heading); font-size: 18px; font-weight: 700; margin-bottom: 6px; }
+.process-step p { font-size: 14.5px; color: var(--gray-500); }
