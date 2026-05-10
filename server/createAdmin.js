@@ -17,9 +17,7 @@ async function createAdmin() {
   }
 
   await User.create({ name, email, password, role: 'admin' })
-  console.log('Admin created successfully')
-  console.log('Email:', email)
-  console.log('Password: (set in .env as ADMIN_PASSWORD)')
+  console.log('Admin created:', email)
   await mongoose.disconnect()
 }
 
