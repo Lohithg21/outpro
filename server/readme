@@ -1,0 +1,36 @@
+live preview - https://outpro-oayz.vercel.app/
+
+For Admin page:
+
+Go to mongodb.com/atlas → your cluster → Browse Collections
+You'll see your outpro database → click the users collection
+If it's empty, first register a normal account on your live site (go to your-frontend.vercel.app/register)
+Come back to Atlas → refresh the users collection → you'll see your user document
+Click the pencil/edit icon on that document
+Find the role field — it says "user"
+Change it to "admin"
+Click Update
+
+Setup the Backen:
+
+bashcd server
+npm install
+Create a .env file inside the server folder:
+MONGO_URI=mongodb://localhost:27017/outpro
+JWT_SECRET=anylongrandomstring123456
+CLIENT_URL=http://localhost:5173
+ADMIN_EMAIL=admin@outpro.in
+ADMIN_PASSWORD=Admin@2025
+PORT=5000
+Start the backend:
+bashnpm run dev
+
+Setup the Frontend:
+
+bashcd client
+npm install
+Create a .env file inside the client folder:
+VITE_API_URL=http://localhost:5000
+Start the frontend:
+bashnpm run dev
+Frontend runs on: http://localhost:5173
